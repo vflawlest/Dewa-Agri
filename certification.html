@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DewaAgri - Integrated Coconut Processing</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header id="navbar" style="background: rgb(17, 67, 42)">
+      <div class="container nav">
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none; color: white">
+            DEWA AGRI
+          </a>
+        </div>
+
+        <nav id="nav-menu">
+          <a href="about.html">About</a>
+          <a href="certification.html">Certification</a>
+          <a href="products.html">Products</a>
+          <a href="blogs.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <!-- <div class="language">
+          <button onclick="setLanguage('id')">ID</button>
+          <button onclick="setLanguage('en')">EN</button>
+        </div> -->
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="cert-hero">
+      <h1 data-aos="fade-down" data-aos-duration="1000">Our Certifications</h1>
+    </section>
+
+    <!-- CONTENT -->
+
+    <section class="cert-container">
+      <p data-aos="fade-up" data-aos-delay="200">
+        Our company is committed to maintaining the highest standards in
+        quality, sustainability, and food safety. These certifications
+        demonstrate our dedication to responsible coconut plantation management
+        and processing.
+      </p>
+
+      <div class="cert-grid">
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/iso.png" />
+
+          <h3>BPOM</h3>
+
+          <p>Quality management system ensuring consistent product quality.</p>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="images/halal.png" />
+
+          <h3>Halal Certification</h3>
+
+          <p>Ensuring our products meet halal production standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer" data-aos="fade-up">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="assets/logo.png" class="footer-logo" />
+
+          <p><b>EMAIL</b> : pt.perkebunandewaagri@gmail.com</p>
+          <p><b>JOBS</b> : pt.perkebunandewaagri@gmail.com</p>
+
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+            <a
+              href="https://id.linkedin.com/company/pt-perkebunan-dewa-agri"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/dewaagriperkebunan"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-jakarta">
+          <h3>BOGOR (Office)</h3>
+
+          <p>
+            Kota Wisata Maison Avenue,<br />
+            Blok MA No.9<br />
+            Limus Nunggal,<br />
+            Kecamatan Cileungsi,<br />
+            Kabupaten Bogor,<br />
+            Jawa Barat, 16967
+          </p>
+
+          <p>Whatsapp : -</p>
+        </div>
+
+        <div class="footer-jailolo">
+          <h3>TANJUNG LESUNG (Seed Plantation)</h3>
+
+          <p>
+            Cimanis, Sobang<br />
+            Pandeglang, Banten
+          </p>
+
+          <br />
+
+          <h3>TANJUNG SAMAK (Plantation)</h3>
+
+          <p>
+            Tanjung Samak, Rangsang<br />
+            Kepulauan Meranti, Riau
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    </script>
+    <script>
+      // Hamburger menu
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
