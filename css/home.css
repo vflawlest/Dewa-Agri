@@ -100,7 +100,7 @@ a {
 
 .hero {
   height: 100vh;
-  background: url("../assets/hero2.JPG") center/cover no-repeat;
+  background: url("../assets/hero2.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
 }
